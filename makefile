@@ -17,7 +17,7 @@
 #   eth.getBlockByNumber(8)
 #   eth.getTransaction("0xaea41e7c13a7ea627169c74ade4d5ea86664ff1f740cd90e499f3f842656d4ad")
 #
-# These are examples of what you can do in the HTTP-RPC environment.
+# These are examples of what you can do in the HTTP-RPC environment. 
 # https://documenter.getpostman.com/view/4117254/ethereum-json-rpc/RVu7CT5J
 # curl -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"eth_coinbase", "id":1}' localhost:8545
 # curl -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x6327A38415C53FFb36c11db55Ea74cc9cB4976Fd", "latest"], "id":1}' localhost:8545

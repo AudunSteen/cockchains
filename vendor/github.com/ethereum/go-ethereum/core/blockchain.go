@@ -2364,7 +2364,7 @@ func (bc *BlockChain) SetCanonical(head *types.Block) (common.Hash, error) {
 	if timestamp := time.Unix(int64(head.Time()), 0); time.Since(timestamp) > time.Minute {
 		context = append(context, []interface{}{"age", common.PrettyAge(timestamp)}...)
 	}
-	log.Info("Chain head was updated", context...)
+	log.Info("cockchain head was updated/ny artikkel", context...)
 	return head.Hash(), nil
 }
 
@@ -2490,7 +2490,7 @@ func (bc *BlockChain) maintainTxIndex() {
 		return
 	}
 	defer sub.Unsubscribe()
-	log.Info("Initialized transaction indexer", "limit", bc.TxLookupLimit())
+	log.Info("Initialized article deposit", "limit", bc.TxLookupLimit())
 
 	// Launch the initial processing if chain is not empty. This step is
 	// useful in these scenarios that chain has no progress and indexer
